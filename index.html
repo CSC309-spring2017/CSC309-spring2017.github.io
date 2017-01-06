@@ -1,5 +1,16 @@
 <!DOCTYPE HTML>
 <html lang="en">
+	<style>
+	div.scroll  {
+	direction:rtl; 
+    width:50%;
+    overflow-y:scroll;
+    height:100px;
+    }
+	div {
+	direction:ltr;
+	}
+	</style>
   <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="./styles.css" type="text/css">
@@ -12,13 +23,14 @@
 		
 	
 	<div class="navigation">
-		<ul><li><a href="index.html">home</a></li>
-		    <li><a href="courseinfo.pdf">information sheet</a></li>
-			<li><a href="piazza.pdf">discussion (Bulletin Board)</a></li>
-			<li><a href="http://www.illnessverification.utoronto.ca/getattachment/index/Verification-of-Illness-or-Injury-form-Jan-22-2013.pdf.aspx">medical certificate</a></li>
+		<ul><li><a href="./index.html">home</a></li>
+		    <li><a href="./syllabus.html">information sheet</a></li>
+			<li><a href="./staff.html">course staff</a></li>
+			<li><a href="./re-mark.html">re-mark form</a></li>
+			<li><a href="./specialConsideration.html">special consideration</a></li>
+			<li><a href="https://bb-2017-01.teach.cs.toronto.edu/c/csc309">discussion board</a></li>
 			<li><a href="http://www.cdf.toronto.edu/resources/cdf_student_secure_website.html">grades</a></li>
-			<li><a href="./test-re-mark.txt">test re-mark form</a></li>
-			<li><a href="./specialConsideration.txt">special Consideration form</a></li>
+
 		</ul>
 	</div>
  
@@ -29,9 +41,18 @@
 				window.print();
 			}
 			</script>
-		<dl>	
-			<table width="80%">
-			  
+			<h3>Announcements:</h3>
+			<div class="scroll">
+				<div>
+				<ul>
+					<li>Welcome to CSC309, Spring 2017! Lectures and labs start from Jan 09. Meanwhile, please make sure to read the information sheet, on the left.</li>
+				</ul>
+				</div>
+			</div>
+			
+		<dl>
+<h3>Schedule:</h3>			
+			<table width="80%">		  
 			    <tr>
 				     <td><font size="2"><i>The following table will be updated regularly with more details.<br>Students are encouraged to complete the lecture notes by their own, during the lectures and/or shortly after.</i></font>
 						<font size="4">
