@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>TA Profile Information</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>TA Application Form</h1>
+            <h2>Personal Information</h2>
+        </header>
+
+        <form action="/signup" method="post">
+            <!-- TAs are identifed by their student number. -->
+            <div class="form_element">
+                <label id="stunumField">
+                    <span class="label">Student Number:</span><br>
+                    <input type="text" id="stunum" name="stunum" pattern="\d{9}\d?$" required>
+                    <span class="error"><%- errors.error_stunum %></span>
+                </label>
+            </div>
+
+            <div class="form_element">
+                <label id="givenField">
+                    <span class="label">Given Name:</span>
+                    <input type="text" id="givenname" name="givenname" required>
+                </label>
+            </div>
+
+            <div class="form_element">
+                <label id="familyField">
+                    <span class="label">Family Name:</span>
+                    <input type="text" id="familyname" name="familyname" required>
+                </label>
+            </div>
+
+            <div class="form_element">
+                <label id="phoneField">
+                    <span class="label">Phone Number:</span>
+                    <input type="tel" id="phone" name="phone" pattern="\(?\d{3}\)?-?\d{3}-?\d{4}" required>
+                    <span class="error"><%- errors.error_phone %></span>
+                </label>
+            </div>
+
+            <div class="form_element">
+                <label id="birthdayField">
+                    <span class="label">Birthday:</span>
+                    <input type="text" id="birthday" name="birthday" pattern="\d{4}-\d{2}-\d{2}" placeholder="yyyy-mm-dd">
+                    <span class="error"><%- errors.error_birthday %></span>
+                </label>
+            </div>
+
+            <div class="form_element">
+                <label for="info">Other information relevant to your application:</label>
+                <textarea name="info" rows="6" cols="50"></textarea>
+            </div>
+
+            <div class="form_element">
+                <input id="SubmitButton" type="submit" value="Submit">
+            </div>
+
+            <div style="word-break:break-all;">
+                <table>
+                    <thead>
+                        <td>id</td>
+                        <td>stunum</td>
+                        <td>givenname</td>
+                        <td>familyname</td>
+                        <td>phone</td>
+                        <td>birthday</td>
+                    </thead>
+                <% for(var i=0; i < tas.length; i++) { %>
+                    <tr>
+                        <td><%= tas[i].id %></td>
+                        <td><%= tas[i].stunum %></td>
+                        <td><%= tas[i].givenname %></td>
+                        <td><%= tas[i].familyname %></td>
+                        <td><%= tas[i].phone %></td>
+                        <td><%= tas[i].birthday %></td>
+                    </tr>
+                <% } %>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>

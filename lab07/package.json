@@ -1,0 +1,17 @@
+{
+  "name": "chat_server",
+  "version": "0.0.2",
+  "description": "An example chat server for students",
+  "main": "chatserver.js",
+  "scripts": {
+    "test": "echo \"Error: no tests \" && exit 1"
+  },
+  "author": "CSC309-TAs",
+  "license": "GPLv3",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-session": "^1.15.0"
+  }
+}

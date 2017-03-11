@@ -1,0 +1,95 @@
+body {
+    font: 400 18pt/24pt "DINPro", "Helvetica", sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 66%;
+}
+
+div.form_element {
+    margin: 1rem;
+}
+
+label, input, textarea, select, option {
+    font: 400 18pt/24pt "DINPro", "Helvetica", sans-serif;
+}
+input, textarea, select, option {
+    border: 1px solid #ccc;
+    padding: 0.25rem;
+}
+
+label {
+    cursor: pointer;
+    display: block;
+    margin: 2rem 0;
+}
+label:first-child {
+    margin-top: 0;
+}
+label:after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+label span.label {
+    float: left;
+    display: block;
+    width: 20rem;
+}
+label span.error {
+    color: red;
+    padding-left: 1rem;
+}
+
+label input {
+    float: left;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    /*margin-left: 10rem;*/
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #f3f3f3;
+}
+input[type="submit"]:active,
+input[type="reset"]:active {
+    border-color: #999;
+    background-color: #ccc;
+}
+
+input#otherdept {
+    display: none;
+    margin-left: 20rem;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    margin: 3rem 0;
+}
+
+
+
+/* STYLING FIELDS WITH ERRORS */
+/* New pseudo-classes to style fields that have an error: */
+/* :valid, :invalid, :required, :optional, :in-range, :out-of-range */
+
+input:invalid {
+  outline: 2px solid red;
+  background-color: #FFC6B3;
+}
