@@ -1,0 +1,24 @@
+{
+  "name": "lab11-dev",
+  "version": "1.0.0",
+  "description": "Just a slow loading website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"OK\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSC309-spring2017/lab11-dev.git"
+  },
+  "author": "whizzzkid",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/CSC309-spring2017/lab11-dev/issues"
+  },
+  "homepage": "https://github.com/CSC309-spring2017/lab11-dev#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  }
+}
